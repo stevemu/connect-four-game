@@ -1,0 +1,54 @@
+body {
+  //color: red;
+}
+
+#board-container {
+  width: 500px;
+  height: 450px;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+
+}
+
+.col {
+  background-color: red;
+  flex-basis: 100px;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.col:last-child {
+  border-right: none;
+}
+
+.row {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+button {
+  margin-bottom: 20px;
+}
+
+.turn {
+  text-align: center;
+}
